@@ -1,0 +1,5 @@
+<launch>
+    <node name="kitti_node" pkg="kitti_tutorial" type="kitti.py" output="screen" />
+    <!-- Visualization - RViz-->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find kitti_tutorial)/kitti_tutorial.rviz" output="screen" />
+</launch>
